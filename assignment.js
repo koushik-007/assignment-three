@@ -5,7 +5,7 @@ function feetToMile(feet){
         return message;
     }
     else{
-        let mile = feet/3333;
+        let mile = feet/5280;
         mile = mile.toFixed(3);
         return mile;
     }
