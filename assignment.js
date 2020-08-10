@@ -10,7 +10,7 @@ function feetToMile(feet){
         return mile;
     }
 }
-let feet = -5555;
+let feet = 5555;
 let mile = feetToMile(feet);
 console.log(feet ,' feet is = ', mile ,'mile');
 
@@ -71,4 +71,19 @@ function tinyFriend(friendNames){
     }
 }
 let friendNames = [];
+console.log('The smallest word in the array is:',tinyFriend(friendNames));
+
+
+
+//this function working better than before. 
+let num = ["koushik", "prince", "orion","rafi"];
+let min = num[0];
+function smallestWord(num){
+    for (let i = 0; i < num.length; i++) {
+        if (min.length > num[i].length) {
+         min = num[i];        
+        }
+    }
+    return min;
+}
 console.log('The smallest word in the array is:',tinyFriend(friendNames));
